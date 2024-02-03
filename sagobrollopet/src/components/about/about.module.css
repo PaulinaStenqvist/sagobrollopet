@@ -1,0 +1,75 @@
+.about {
+    text-align: center;
+    min-width: 60rem;
+    margin: 0 auto;
+}
+
+.about img{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.about h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.about p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--black);
+}
+
+.team .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.team .box-container .box{
+    border-radius: .5rem;
+    background: var(--transparent-white);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.team .box-container .box img{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.team .box-container .box p{
+    font-size: 1.5rem;
+    color: var(--pink);
+}
+
+.team .box-container .box .share{
+    margin-top: .5rem;
+}
+
+.team .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.7rem;
+    background: var(--black);
+    border-radius: .5rem;
+    color: var(--white);
+    margin: .5rem 0;
+}
+
+.team .box-container .box .share a:hover{
+    background: var(--pink);
+}
+

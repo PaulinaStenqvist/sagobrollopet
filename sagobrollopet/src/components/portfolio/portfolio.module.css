@@ -1,0 +1,35 @@
+.portfolio .portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.portfolio .portfolio-container .box{
+    background: var(--transparent-white);
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.portfolio .portfolio-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+}
+
+.portfolio .portfolio-container .box .image img{
+    transition: .2s linear;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio .portfolio-container .box:hover .image img{
+    transform: scale(1.1);    
+}
+
+
+.portfolio .portfolio-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+    padding: 1rem;
+}

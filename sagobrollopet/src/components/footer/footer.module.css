@@ -1,0 +1,49 @@
+
+
+.footer {
+    background: var(--transparent-white);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 1 rem 0;
+
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1 rem 0;
+}
+
+.footer .box-container .box a i{
+    color: var(--pink);
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: var(--border);
+    color:var(--black);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer .credit span {
+    color: var(--pink);
+}
