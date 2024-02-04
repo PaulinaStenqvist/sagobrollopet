@@ -16,7 +16,7 @@ export const ToDoForm = ({addToDo}) => {
   return (
     <form onSubmit={handleSubmit} className="ToDoForm">
     <input type="text" value={value} onChange={(e) => setValue(e.target.value)} className="toDo-input" placeholder='What is the task today?' />
-    <button type="submit" className='toDo-btn'>Add Task</button>
+    <button type="submit" className='toDo-btn'>Spara</button>
   </form>
   )
 }

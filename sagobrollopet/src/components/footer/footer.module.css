@@ -1,4 +1,12 @@
-
+.container {
+    border-radius: .5rem;
+    overflow: hidden;
+    background: var(--transparent-white);
+    backdrop-filter: blur(.5rem);
+    max-width: 1200px;
+    margin:5rem auto;
+    box-shadow: var(--box-shadow);
+  }
 
 .footer {
     background: var(--transparent-white);
