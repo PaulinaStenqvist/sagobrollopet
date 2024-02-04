@@ -1,16 +1,17 @@
 import './App.css';
-import { ToDoWrapper } from './components/toDoList/ToDoWrapper';
-//import { Footer } from './components/footer/Footer';
+import { Header } from './components/header/Header';
+import { Home } from './components/home/Home';
+import { Services } from './components/services/Services'; 
+import { Footer } from './components/footer/Footer';
 
 function App() {
   return (
     <div className="App">
       
-      <ToDoWrapper  />
-      <ToDoWrapper  />
-      <ToDoWrapper  />
-
-      {/* <Footer /> */}
+      <Header  />
+      <Home />
+      <Services />
+       <Footer />
     </div>
   );
 }
