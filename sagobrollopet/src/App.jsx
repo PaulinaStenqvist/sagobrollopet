@@ -12,33 +12,22 @@ import { Login } from './components/login/Login';
 // import { Footer } from './components/footer/Footer';
 
 
-const App =() => {
+const App = () => {
   return (
     <Router>
       <Header />
       <Switch>
-        <Route path="/" component={Home} exact>
-          <Home/>
-        </Route>
-        <Route path="/about" component={About} exact>
-          <About/>
-        </Route>
-        <Route path="/portfolio" component={Portfolio} exact>
-          <Portfolio/>
-        </Route>
-        <Route path="/pricing" component={Pricing} exact>
-          <Pricing/>
-        </Route>
-        <Route path="/contact" component={Contact} exact>
-          <Contact/>
-        </Route>
-        <Route path="/login" component={Login} exact>
-          <Login/>
-        </Route>
+        <Route path="/" component={Home} exact />
+        <Route path="/about" component={About} exact />
+        <Route path="/portfolio" component={Portfolio} exact />
+        <Route path="/pricing" component={Pricing} exact />
+        <Route path="/contact" component={Contact} exact />
+        <Route path="/login" component={Login} exact />
       </Switch>
     </Router>
   );
 }
+
 
 export default App;
 
