@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from "react";
 import styles from "./header.module.css";
 import { Link } from 'react-router-dom';
 
@@ -10,11 +10,11 @@ const Header = () => {
   // const toggleMenu = () => {
   //   setIsMenuOpen(!isMenuOpen); // Växlar state mellan true och false
   // };
-
+ const [isMobile, setIsMobile] = useState(false);
   return (
     <nav className="header">
       <h3 className="logo">Sagobröllopet</h3>
-      <ul className="nav-links">
+      <ul className={isMobile ? "nav-links-mobile" : "nav-links"}>
         <Link to="/" className="home">
           <li>HOME</li>
         </Link>
@@ -44,9 +44,13 @@ const Header = () => {
           <li>LOGGA IN</li>
         </Link>
       </ul>
-    
-      
-      {/* <div id="menu-btn" className="fas fa-bars" onClick={toggleMenu}></div> */}
+      <button className="mobile-menu-icon">
+        {isMobile ? (
+        <i className="fas fa-times"></i>
+      ) : (
+        <i className="fas fa-bars"></i>
+      )}
+      </button>
     </nav>
   );
 };

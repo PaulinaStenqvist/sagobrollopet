@@ -37,7 +37,11 @@
     cursor: pointer;
 }
 
-.header .navbar a{
+.mobile-menu-icon{
+    display: none;
+}
+
+/* .header .navbar a{
     font-size: 2rem;
     margin-left: 2rem;
     color:var(--black);
@@ -52,4 +56,24 @@
     color:var(--black);
     cursor: pointer;
     display: none;
+} */
+
+@media screen and (max-width: 780px) {
+    .log{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: aqua;
+        left: 0;;
+    }
 }
