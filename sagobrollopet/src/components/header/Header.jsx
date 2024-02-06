@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./header.module.css";
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Header = () => {
   // State för att hålla reda på om mobilmenyn är visad eller ej

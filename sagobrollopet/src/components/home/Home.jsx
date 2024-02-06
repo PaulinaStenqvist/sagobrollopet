@@ -1,54 +1,36 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css'; // importera Swiper CSS
-import 'swiper/css/pagination'; // importera pagination modulens CSS
+import React from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
-import SwiperCore, { Pagination } from 'swiper'; // importera Swiper och moduler
-
-// Aktivera Pagination-modulen
-SwiperCore.use([Pagination]);
-
-const Home = () => {
+export const Home = ({ slides }) => {
   return (
-    <section className="home">
-      <div className="swiper home-slider">
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-        >
-          <SwiperSlide>
-            <div className="slide" style={{backgroundImage: "url(img/bild1.png)"}}>
-              <div className="content">
-                <h3>Planera Ert Drömbröllop!</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam voluptate, illum expedita blanditiis recusandae nam aliquid beatae sequi debitis ea!</p>
-                <a href="about.html" className="btn">Upptäck Mer</a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide" style={{backgroundImage: "url(img/bild2.png)"}}>
-              <div className="content">
-                <h3>Planera Ert Drömbröllop!</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam voluptate, illum expedita blanditiis recusandae nam aliquid beatae sequi debitis ea!</p>
-                <a href="about.html" className="btn">Upptäck Mer</a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide" style={{backgroundImage: "url(img/bild3.png)"}}>
-              <div className="content">
-                <h3>Planera Ert Drömbröllop!</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam voluptate, illum expedita blanditiis recusandae nam aliquid beatae sequi debitis ea!</p>
-                <a href="about.html" className="btn">Upptäck Mer</a>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
-      <div className="swiper-pagination"></div>
-    </section>
-  );
-};
+    <Swiper
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+      effect={"cube"}
+      cubeEffect={{
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      }}
+    >
+      {slides.map((slide) => (
+        <SwiperSlide key={slide.image}>
+          <img src={slide.image} alt={slide.title}/>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  )
 
-export default Home;
+}
