@@ -29,6 +29,7 @@ export const Home = ({ slides }) => {
         <SwiperSlide key={slide.image}>
           <img src={slide.image} alt={slide.title}/>
         </SwiperSlide>
+        
       ))}
     </Swiper>
   )

@@ -1,32 +1,53 @@
 import React from 'react'
 import styles from "./header.module.css";
-
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   // State för att hålla reda på om mobilmenyn är visad eller ej
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Funktion för att hantera klick på menyns knapp
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Växlar state mellan true och false
-  };
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen); // Växlar state mellan true och false
+  // };
 
   return (
-    <section className="header">
-      <a href="index.html" className="logo">Sagobröllopet</a>
+    <nav className="header">
+      <h3 className="logo">Sagobröllopet</h3>
+      <ul className="nav-links">
+        <Link to="/" className="home">
+          <li>HOME</li>
+        </Link>
+      </ul>
+      <ul className="nav-links">
+        <Link to="/about" className="home">
+          <li>OM</li>
+        </Link>
+      </ul>
+      <ul className="nav-links">
+        <Link to="/portfolio" className="home">
+          <li>PORTFOLIO</li>
+        </Link>
+      </ul>
+      <ul className="nav-links">
+        <Link to="/pricing" className="home">
+          <li>PRIS</li>
+        </Link>
+      </ul>
+      <ul className="nav-links">
+        <Link to="/contact" className="home">
+          <li>KONTAKT</li>
+        </Link>
+      </ul>
+      <ul className="nav-links">
+        <Link to="/login" className="home">
+          <li>LOGGA IN</li>
+        </Link>
+      </ul>
+    
       
-      <nav className={`navbar ${isMenuOpen ? 'active' : ''}`}>
-        <a href="index.html">HEM</a>
-        <a href="about.html">OM</a>
-        <a href="portfolio.html">PORTFOLIO</a>
-        <a href="pricing.html">PRIS</a>
-        <a href="contact.html">KONTAKT</a>
-        <a href="contact.html">LOGGA IN</a>
-      </nav>
-      
-      <div id="menu-btn" className="fas fa-bars" onClick={toggleMenu}></div>
-    </section>
+      {/* <div id="menu-btn" className="fas fa-bars" onClick={toggleMenu}></div> */}
+    </nav>
   );
 };
 
