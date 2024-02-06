@@ -67,9 +67,6 @@ const Services = () => {
             </div>
           </SwiperSlide>
           
-          {/* Upprepa SwiperSlide för varje tjänst du vill visa */}
-          {/* Använd samma struktur som ovan, men ändra src för img, samt texten för h3, p och href för a */}
-
         </Swiper>
         <div className="swiper-pagination"></div>
       </div>
