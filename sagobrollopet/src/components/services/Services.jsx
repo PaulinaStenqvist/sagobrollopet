@@ -21,7 +21,47 @@ const Services = () => {
           <SwiperSlide>
             <img src="img/bild6.png" alt="our services" />
             <div className="content">
-              <h3>Att Göra Lista</h3>
+              <h3>Gästhantering</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a href="about.html" className="btn">Om Oss</a>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="img/bild6.png" alt="our services" />
+            <div className="content">
+              <h3>Bordsplacering</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a href="about.html" className="btn">Om Oss</a>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="img/bild6.png" alt="our services" />
+            <div className="content">
+              <h3>Budget</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a href="about.html" className="btn">Om Oss</a>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="img/bild6.png" alt="our services" />
+            <div className="content">
+              <h3>Att Göra Listor</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a href="about.html" className="btn">Om Oss</a>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="img/bild6.png" alt="our services" />
+            <div className="content">
+              <h3>Gäst....</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a href="about.html" className="btn">Om Oss</a>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="img/bild6.png" alt="our services" />
+            <div className="content">
+              <h3>Gäst....</h3>
               <p>Lorem ipsum dolor sit amet.</p>
               <a href="about.html" className="btn">Om Oss</a>
             </div>
