@@ -15,6 +15,7 @@ const Header = () => {
     <nav className="header">
       <h3 className="logo">Sagobröllopet</h3>
       <ul className={isMobile ? "nav-links-mobile" : "nav-links"}>
+        onClick={() => setIsMobile(false)}
         <Link to="/" className="home">
           <li>HOME</li>
         </Link>
@@ -44,7 +45,10 @@ const Header = () => {
           <li>LOGGA IN</li>
         </Link>
       </ul>
-      <button className="mobile-menu-icon">
+      <button 
+      className="mobile-menu-icon"
+      onClick={() => setIsMobile(!isMobile)}
+      >
         {isMobile ? (
         <i className="fas fa-times"></i>
       ) : (
