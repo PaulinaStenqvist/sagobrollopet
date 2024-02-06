@@ -16,6 +16,27 @@
     color:var(--black);
 }
 
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+.home,
+.about,
+.portfolio,
+.pricing,
+.contact,
+.login {
+    text-decoration: none
+    color(white);
+    font-size: 2rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
 .header .navbar a{
     font-size: 2rem;
     margin-left: 2rem;

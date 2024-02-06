@@ -20,27 +20,27 @@ const Header = () => {
         </Link>
       </ul>
       <ul className="nav-links">
-        <Link to="/about" className="home">
+        <Link to="/about" className="about">
           <li>OM</li>
         </Link>
       </ul>
       <ul className="nav-links">
-        <Link to="/portfolio" className="home">
+        <Link to="/portfolio" className="portfolio">
           <li>PORTFOLIO</li>
         </Link>
       </ul>
       <ul className="nav-links">
-        <Link to="/pricing" className="home">
+        <Link to="/pricing" className="pricing">
           <li>PRIS</li>
         </Link>
       </ul>
       <ul className="nav-links">
-        <Link to="/contact" className="home">
+        <Link to="/contact" className="contact">
           <li>KONTAKT</li>
         </Link>
       </ul>
       <ul className="nav-links">
-        <Link to="/login" className="home">
+        <Link to="/login" className="login">
           <li>LOGGA IN</li>
         </Link>
       </ul>
