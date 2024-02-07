@@ -1,6 +1,5 @@
 import React from 'react'
-import styles from "./budget.module.css";
-
+import './budget.css';
 const Budget = () => {
     return(
      <div className={styles.container}>

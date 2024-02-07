@@ -2,8 +2,8 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import SwiperCore, { Pagination } from 'swiper';
+import './services.css';
 
 // Aktivera Pagination-modulen
 SwiperCore.use([Pagination]);

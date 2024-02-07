@@ -1,6 +1,5 @@
 import React from 'react'
-import styles from "./table.module.css";
-
+import './table.css';
 const Table = () => {
     return(
      <div className={styles.container}>

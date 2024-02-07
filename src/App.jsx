@@ -9,7 +9,7 @@ import Pricing from './components/pricing/Pricing';
 import Contact from './components/contact/Contact';
 import Login from './components/login/Login';
 //import Services from './components/services/Services'; 
-// import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer';
 
 
 const App = () => {
@@ -26,6 +26,8 @@ const App = () => {
       </Routes>
     </Router>
   );
+  <Footer />
+
 }
 
 

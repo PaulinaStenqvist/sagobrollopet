@@ -1,15 +1,9 @@
 import React, {useState} from "react";
-import styles from "./header.module.css";
+import './header.css';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  // State för att hålla reda på om mobilmenyn är visad eller ej
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Funktion för att hantera klick på menyns knapp
-  // const toggleMenu = () => {
-  //   setIsMenuOpen(!isMenuOpen); // Växlar state mellan true och false
-  // };
  const [isMobile, setIsMobile] = useState(false);
   return (
     <nav className="header">

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./portfolio.module.css";
+import './portfolio.css';
 
 const portfolioItems = [
   { src: "img/bild7.png", title: "Wedding Ceremony" },
