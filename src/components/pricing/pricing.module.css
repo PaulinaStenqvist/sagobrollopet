@@ -1,0 +1,39 @@
+
+.pricing .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.pricing .box-container .box{
+    text-align: center;
+    border-radius: .5rem;
+    background: var(--transparent-white);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
+
+.pricing .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.pricing .box-container .box .price{
+    padding: 1rem;
+    border-radius: .5rem;
+    background: var(--pink);
+    color: var(--white);
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.pricing .box-container .box .list p{
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.pricing .box-container .box .list p i{
+    padding-right: .5rem;
+    color: var(--pink);
+}
