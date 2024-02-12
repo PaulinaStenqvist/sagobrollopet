@@ -21,16 +21,16 @@ export const Header = () => {
           <NavLink to="/about">Om</NavLink>
         </li>
         <li>
-          <NavLink to="/services">Portfolio</NavLink>
+          <NavLink to="/portfolio">Portfolio</NavLink>
         </li>
         <li>
-          <NavLink to="/services">Priser</NavLink>
+          <NavLink to="/pricing">Priser</NavLink>
         </li>
         <li>
           <NavLink to="/contact">Kontakt</NavLink>
         </li>
         <li>
-          <NavLink to="/services">Logga In</NavLink>
+          <NavLink to="/login">Logga In</NavLink>
         </li>
       </ul>
     </nav>

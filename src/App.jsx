@@ -1,5 +1,6 @@
-import React from 'react';
+import { Route, Routes } from "react-router-dom";
 import './App.css';
+import { Header } from "./components/header/Header";
 import { About } from "./components/about/About";
 import { Portfolio } from "./components/portfolio/Portfolio";
 import { Contact } from "./components/contact/Contact";
