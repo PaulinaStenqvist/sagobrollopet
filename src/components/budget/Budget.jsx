@@ -2,7 +2,7 @@ import React from 'react'
 import './budget.css';
 const Budget = () => {
     return(
-     <div className={styles.container}>
+     <div className="budget">
         Budget
      </div>
     );
